@@ -26,7 +26,7 @@ fwrite ($myfile, $txt);
 fwrite ($myfile, $_POST['email']) ;
 $txt = “\nHet achtergelate bericht is: “;
 fwrite ($myfile, $txt);
-fwrite ($myfile, §_POST['bericht']);
+fwrite ($myfile, $_POST['bericht']);
 fclose($myfile);
 
 ?>
