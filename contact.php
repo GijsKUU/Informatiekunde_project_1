@@ -17,17 +17,17 @@ We zullen zo snel mogelijk contact met u opnemen via: <?php echo $_GET["email"];
 
 <? php
 
-$myfile = fopen("$_POST[name].txt", "w") ;
+$myfile = fopen("$_POST[name].txt", "w");
 $txt = "Neem contact op met: ";
 fwrite($myfile, $txt);
 fwrite($myfile, $_POST['name']);
 $txt = "\nOp Email: ";
-fwrite ($myfile, $txt) ;
+fwrite ($myfile, $txt);
 fwrite ($myfile, $_POST['email']) ;
 $txt = “\nHet achtergelate bericht is: “;
-fwrite ($myfile, Stxt);
-fwrite ($myfile, §_POST['bericht']) :
-fclose($myfile) :
+fwrite ($myfile, $txt);
+fwrite ($myfile, §_POST['bericht']);
+fclose($myfile);
 
 ?>
 </body>
